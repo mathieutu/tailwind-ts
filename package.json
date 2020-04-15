@@ -1,0 +1,47 @@
+{
+  "name": "tailwind-ts",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/plugin.js",
+  "types": "dist/plugin.d.ts",
+  "description": "TailwindCss plugin to export Typescript typings, helpers and const from your config.",
+  "author": {
+    "name": "Mathieu TUDISCO",
+    "email": "oss@mathieutu.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathieutu/tailwind-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/mathieutu/tailwind-ts/issues"
+  },
+  "keywords": [
+    "typescript",
+    "tailwind",
+    "tailwindcss",
+    "plugin"
+  ],
+  "dependencies": {
+    "ramda": "^0.27.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@types/ramda": "^0.27.3",
+    "camelcase": "^6.0.0",
+    "classnames": "^2.2.6",
+    "postcss": "^7.0.27",
+    "tailwindcss": "^1.2.0",
+    "typescript": "3.7.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build"
+  }
+}

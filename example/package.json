@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "postcss-cli": "7.1.0",
+    "tailwindcss": "1.2.0",
+    "@tailwindcss/ui": "^0.1.3"
+  },
+  "scripts": {
+    "build": "postcss tailwind.css -o dist/tailwind.css",
+    "build:lib": "cd .. && yarn build",
+    "build:all": "yarn build:lib && postcss tailwind.css -o dist/tailwind.css"
+  }
+}
